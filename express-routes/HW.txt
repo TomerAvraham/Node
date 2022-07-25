@@ -1,0 +1,12 @@
+finish crud action with food 
+
+- get all
+- get one
+-update one
+- delete one
+-create one
+-get by name - return food that the name contains specific letter
+
+
+BOUNCE - 
+create route and crud actions to developers

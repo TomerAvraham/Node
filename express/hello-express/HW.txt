@@ -1,0 +1,16 @@
+//  npm i uuid
+// use uuid for creating random ID
+
+Make a node express app
+  { id: "unique" name: "snow", age: 2, type: "bulldog" }
+1. array of Dogs
+    - GET all dog 
+    - GET dog order by a,b,c
+    - GET dog order by age
+    - POST add new dog
+
+
+    * BOUSE
+    - GET one by name
+    - DELETE delete by id
+    - PUT update by id
