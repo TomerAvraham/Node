@@ -1,13 +1,16 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require("path");
 const app = express();
 
 const VIEWS_PATH = __dirname + "/views/";
 
+console.log(path.join(VIEWS_PATH, "index.html"));
+
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.sendFile(VIEWS_PATH + "index.html");
+  res.sendFile(path.join(VIEWS_PATH, "index.html"));
 });
 
 // Routes
