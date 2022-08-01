@@ -1,0 +1,44 @@
+[
+  {
+    "id": "48b6432b-6d03-45f1-a1e5-39f00f01fc21",
+    "brand": "nike",
+    "name": "air-force",
+    "price": 400,
+    "quantity": 5
+  },
+  {
+    "id": "3be378b8-2612-49f2-b823-32460a147d91",
+    "brand": "adidas",
+    "name": "ultraboost",
+    "price": 800,
+    "quantity": 2
+  },
+  {
+    "id": "b0ad6fbc-e1b2-43fe-a099-818cf207e9b0",
+    "brand": "nike",
+    "name": "air-jordan",
+    "price": 900,
+    "quantity": 1
+  },
+  {
+    "id": "ef71b7ae-1d5e-45ad-b75d-0d603518f634",
+    "brand": "new balance",
+    "name": "505",
+    "price": 850,
+    "quantity": 3
+  },
+  {
+    "id": "9aadb3d2-1f39-4e65-83f5-ee1cf42a5eee",
+    "brand": "havaians",
+    "name": "flipflop",
+    "price": 80,
+    "quantity": 50
+  },
+  {
+    "id": "9dcf660e-49d8-48a0-a74a-81fdceca003f",
+    "brand": "gucci",
+    "name": "heels",
+    "price": 800000000000,
+    "quantity": 1
+  }
+]
