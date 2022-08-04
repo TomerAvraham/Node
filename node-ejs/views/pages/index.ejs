@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+  <body>
+    <%- include('../partials/header') %>
+
+    <h1>Hi, EJS</h1>
+    <p>first name - <%= person.firstName%></p>
+    <p>lsat name - <%= person.lastName%></p>
+    <p>age - <%= person.age%></p>
+
+    <% ["apple", "banana", "melon"].forEach(fruit => { %>
+
+    <p><%= fruit %></p>
+
+    <% }) %>
+  </body>
+</html>
