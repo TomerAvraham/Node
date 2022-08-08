@@ -1,0 +1,31 @@
+add trainer logic get one,get all
+bonus - create a trainer
+
+new route
+new controller
+new service
+
+{
+    firstName: string,
+    lastName: string,
+    age: number,
+    address:{
+        city:string
+        street: string
+
+    },
+    yearsOfExperience:number
+    availableWorkingDays:[
+        string,
+        string,
+        string,
+        string
+    ],
+    trainingStyle:[
+               string,
+        string,
+        string,
+        string 
+    ]
+
+}
