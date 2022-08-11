@@ -1,5 +1,18 @@
 const workoutService = require("../services/workoutService");
 
+function validateWorkoutBody(body) {
+  if (
+    !body.name ||
+    !body.mode ||
+    !body.equipment ||
+    !body.exercises ||
+    !body.trainerTips
+  ) {
+    return false;
+  }
+  return true;
+}
+
 const getAllWorkouts = (req, res) => {
   const workouts = workoutService.allWorkouts();
   res.status(200).json({ status: "SUCCESS", data: workouts });
@@ -17,29 +30,41 @@ const getOneWorkout = (req, res) => {
 };
 
 const createOneWorkout = (req, res) => {
-  if (
-    !req.body.name ||
-    !req.body.mode ||
-    !req.body.equipment ||
-    !req.body.exercises ||
-    !req.body.trainerTips
-  ) {
+  if (!validateWorkoutBody(req.body)) {
     return res
       .status(418)
       .json({ status: "FAILED", message: "Missing workout information" });
   }
 
-  workoutService.createWorkout(req.body);
+  const newWork = workoutService.createWorkout(req.body);
 
-  res.send("create One workout");
+  res.status(200).json({ status: "SUCCESS", data: newWork });
 };
 
 const updateOneWorkout = (req, res) => {
-  res.send("update One workout");
+  if (!validateWorkoutBody(req.body)) {
+    return res
+      .status(418)
+      .json({ status: "FAILED", message: "Missing workout information" });
+  }
+
+  const updateWorkout = workoutService.updateWorkout(req.params.id, req.body);
+
+  if (!updateWorkout)
+    return res
+      .status(400)
+      .json({ status: "FAILED", message: "Didn't update the workout" });
+
+  res.status(200).json({ status: "SUCCESS", data: updateWorkout });
 };
 
 const deleteOneWorkout = (req, res) => {
-  res.send("delete One workout");
+  const isDeleted = workoutService.deleteWorkout(req.params.id);
+  if (isDeleted) return res.status(200).json({ status: "SUCCESS", data: null });
+  res.status(400).json({
+    status: "FAILED",
+    message: `Couldn't delete workout with the id ${req.params.id}`,
+  });
 };
 
 module.exports = {

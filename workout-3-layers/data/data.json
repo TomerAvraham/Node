@@ -48,6 +48,35 @@
         "The first three rounds might feel terrible, but stick to it",
         "RX Weights: 205lb/145lb"
       ]
+    },
+    {
+      "mode": "For sundayes",
+      "equipment": ["barbell", "dumbble"],
+      "exercises": ["bench press 21 * 3", "deadlift 5 * 5"],
+      "trainerTips": ["Dont affreid to go havy!"],
+      "id": "2812c1cd-7053-4827-825c-f760b9d96944",
+      "createdAt": "08/11/2022, 08:18:01 PM",
+      "updateAt": "08/11/2022, 08:18:01 PM"
+    },
+    {
+      "mode": "For sundayes",
+      "equipment": ["barbell", "dumbble"],
+      "exercises": ["bench press 21 * 3", "deadlift 5 * 5"],
+      "trainerTips": ["Dont affreid to go havy!"],
+      "id": "94bae5c0-65b3-49ff-a9b3-e1c5017ebc34",
+      "createdAt": "08/11/2022, 08:19:14 PM",
+      "updateAt": "08/11/2022, 08:19:14 PM"
+    },
+    {
+      "name": "Upper & Lower & abs",
+      "mode": "For sundayes",
+      "equipment": ["barbell", "dumbble"],
+      "exercises": ["bench press 21 * 3", "deadlift 5 * 5"],
+      "trainerTips": ["Dont affreid to go havy!"],
+      "id": "f8a4a946-bb9b-4027-b01f-b7e8093b04ab",
+      "createdAt": "08/11/2022, 08:21:14 PM",
+      "updateAt": "08/11/2022, 08:38:26 PM"
     }
-  ]
+  ],
+  "trainers": []
 }
